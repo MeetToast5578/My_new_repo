@@ -6,6 +6,7 @@ people = [
     {'name': 'Charlie', 'age': 35, 'city': 'Los Angeles'}
 ]
 age = []
+print("```")
 print("Names of people older than 25:")
 for item in people:
     age.append(item.get("age"))
@@ -19,3 +20,6 @@ for i in reversed(sorted(age)):
         if item.get("age") == i:
             print(item)
             people.remove(item)
+print("""
+      """)
+print("```")

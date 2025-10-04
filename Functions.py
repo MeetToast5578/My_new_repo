@@ -8,7 +8,7 @@ def prime_number(n):
     return True
 
 
-def reciprocal_prime(a, b):
+def GCD(a: int, b: int) -> bool:
     while b != 0:
         a, b = b, a%b
     if a == 1:

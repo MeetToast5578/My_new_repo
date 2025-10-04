@@ -6,3 +6,10 @@ def prime_number(n):
         if n % i == 0:
             return False
     return True
+
+
+def reciprocal_prime(a, b):
+    if math.gcd(a, b) == 1:
+        return True
+    else:
+        return False

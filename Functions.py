@@ -9,7 +9,9 @@ def prime_number(n):
 
 
 def reciprocal_prime(a, b):
-    if math.gcd(a, b) == 1:
+    while b != 0:
+        a, b = b, a%b
+    if a == 1:
         return True
     else:
         return False

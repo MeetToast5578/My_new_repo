@@ -42,6 +42,7 @@ n = input().strip()
 x = n[:n.index("+")]
 y = n[n.index("+")+1:]
 converter = RomanConverter()
-z = converter.roman_to_int(x) + converter.roman_to_int(y)
+z_int = converter.roman_to_int(x) + converter.roman_to_int(y)
+z_string = converter.int_to_roman(z_int)
 print(f"{x} = {converter.roman_to_int(x)}, {y} = {converter.roman_to_int(y)}")
-print(f"{x} + {y} = {converter.int_to_roman(z)}, {converter.int_to_roman(z)} = {z}")
+print(f"{x} + {y} = {z_string}, {z_string} = {z_int}")
